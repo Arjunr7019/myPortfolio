@@ -194,6 +194,8 @@ nav ul li a:hover {
 .cv,.dw-cv:hover{
     color: var(--theme-color);
 }
+
+/* ---------Moble-Screen---------- */
 @media screen and (max-width:700px){
     .logo{
         display: flex;
@@ -206,7 +208,7 @@ nav ul li a:hover {
     }
     .txt-ur{
         width: 200px;
-        margin: 0 14px 5px 14px;
+        margin: 0 14px 5px 0;
     }
     ul{
         visibility: hidden;
@@ -223,7 +225,7 @@ nav ul li a:hover {
     }
     .container-user{
         margin-top: 80px;
-        margin-left: 20px;
+        margin-left: 15px;
         width: 100vw;
     }
     .static-txt{
@@ -233,13 +235,13 @@ nav ul li a:hover {
         font-size: 35px;
     }
     .info{
-        margin-left: 20px;
+        margin-left: 15px;
         font-size: 18px;
-        margin-right: 20px;
+        margin-right: 15px;
     }
     .cv{
-        width: 90%;
-        margin-left: 20px;
+        width: 92%;
+        margin-left: 15px;
         justify-content: center;
     }
     .cv-img{
@@ -253,7 +255,9 @@ nav ul li a:hover {
         justify-content: center;
     }
 }
-@media screen and (max-width:900px){
+
+/* ---------Tablets & Ipad Screen----------- */
+@media (min-width:750px) and (max-width:900px){
     .logo{
         margin-left: 10px;
     }
