@@ -66,7 +66,7 @@ nav{
     display: flex;
     align-items: center;
 }
-nav ul{
+.navStyle{
     height: 50px;
     display: flex;
     justify-content: flex-start;
@@ -194,6 +194,44 @@ nav ul li a:hover {
 .cv,.dw-cv:hover{
     color: var(--theme-color);
 }
+.classNothing{
+    height: 0px;
+}
+.changeNothing{
+    height: 0px;
+}
+
+/* ------Nav Menu-------- */
+#navMenu > span{
+    display: none;
+    width: 28px;
+    height: 2px;
+    border-radius: 9999px;
+    background-color: var(--secondary-color);
+}
+#navMenu > span:not(:last-child){
+    margin-bottom: 7px;
+}
+#navMenu,#navMenu > span{
+    transition: all .4s ease-in-out;
+}
+#navMenu.action{
+    transition-delay: 0.8s;
+    transform: rotate(45deg);
+}
+#navMenu.action > span:nth-child(2){
+    width: 0;
+}
+#navMenu.action > span:nth-child(1),
+#navMenu.action > span:nth-child(3){
+    transition-delay: .4s;
+}
+#navMenu.action > span:nth-child(1){
+    transform: translateY(9px);
+}
+#navMenu.action > span:nth-child(3){
+    transform: translateY(-9px) rotate(90deg);
+}
 
 /* ---------Moble-Screen---------- */
 @media screen and (max-width:700px){
@@ -206,13 +244,22 @@ nav ul li a:hover {
     header{
         width: 100vw;
     }
+    nav{
+        justify-content: space-between;
+    }
     .txt-ur{
         width: 200px;
         margin: 0 14px 5px 0;
     }
-    nav ul{
-        visibility: hidden;
+    .navStyle{
         display: none;
+    }
+    .navVisible{
+        display: block;
+        height: 50px;
+    }
+    nav ul li{
+        margin-top: 9px;
     }
     .modeDarkLight{
         display: none;
@@ -259,6 +306,10 @@ nav ul li a:hover {
     }
     .modeDarkLight{
         visibility: collapse;
+    }
+    #navMenu > span{
+        display: block;
+        margin-right: 25px;
     }
 }
 
