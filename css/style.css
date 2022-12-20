@@ -204,15 +204,18 @@ nav ul li a:hover {
         margin-left: 20px;
     }
     header{
-        width: 100%;
+        width: 100vw;
     }
     .txt-ur{
         width: 200px;
         margin: 0 14px 5px 0;
     }
-    ul{
+    nav ul{
         visibility: hidden;
-        display: block;
+        display: none;
+    }
+    .modeDarkLight{
+        display: none;
     }
     nav{
         width: 100%;
@@ -253,6 +256,9 @@ nav ul li a:hover {
     .dev-icon-img{
         display: flex;
         justify-content: center;
+    }
+    .modeDarkLight{
+        visibility: collapse;
     }
 }
 
