@@ -3,7 +3,7 @@
 
 :root{
     --primary-color:#ffffff;
-    --secondary-color: black;
+    --secondary-color: #000000;
     --nav-txt-color:#8a8a8a;
     --theme-color:#ffc107;
 
@@ -85,13 +85,16 @@ nav ul li a:hover {
     /* color: #d6d600; */
     color: var(--theme-color);
 } 
-.txt-ur:hover{
+/* .txt-ur:hover{
     color: var(--theme-color);
     
+} */
+/* .img-ur:hover{
+    background: bottom / contain no-repeat url("/img/profile-yellow.png");
 }
-.img-ur:hover{
-    background: bottom / contain no-repeat url("img/profile-yellow.png");
-}
+.change-img-ur:hover{
+    background: bottom / contain no-repeat url("/img/profile-yellow.png");
+} */
 .mode-img{
     display: inline-block;
     width: 35px;
@@ -191,9 +194,9 @@ nav ul li a:hover {
     color: #3d3d3d;
     font-family: 'Roboto', sans-serif;
 }
-.cv,.dw-cv:hover{
+/* .cv,.dw-cv:hover{
     color: var(--theme-color);
-}
+} */
 .classNothing{
     height: 0px;
 }
