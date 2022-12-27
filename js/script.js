@@ -69,3 +69,17 @@ mainCV.addEventListener("mouseout",()=>{
     document.querySelector("#cvImage").src = cvDownloadImage;
     document.querySelector("#cvText").style.color = cvDownloadText;
 });
+
+
+// ---------Resume Download Link-------------
+
+let resumeDownloadLink = "https://drive.google.com/file/d/1TzPIkEMkkO2k9a2qQiTRdQUxL5xi2ygJ/view?usp=drivesdk";
+let link = document.getElementById("cvText");
+let navBarLink = document.getElementById("resumeLink");
+
+link.onclick = function (){
+    document.getElementById("cvText").href = resumeDownloadLink;
+};
+navBarLink.onclick = function (){
+    document.getElementById("resumeLink").href = resumeDownloadLink;
+};
