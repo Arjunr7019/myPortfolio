@@ -35,36 +35,44 @@ main{
 nav{
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
 }
 .logo{
     display: flex;
     align-items: flex-end;
     cursor: pointer;
-    margin-left: 88px;
+    /* margin-left: 88px; */
 }
-.img-ur{
+#changeUr{
+    font-size: 50px;
+    transition: all 0.4s ease 0s;
+}
+/* .img-ur{
     display: inline-block;
     width: 50px;
     height: 50px;
-    background: bottom / contain no-repeat url("img/profile.png");
+    background: bottom / contain no-repeat url("/img/profile.svg");
     margin-right: 10px;
 }
 .change-img-ur{
     display: inline-block;
     width: 50px;
     height: 50px;
-    background: bottom / contain no-repeat url("img/profile-white.png");
+    background: bottom / contain no-repeat url("/img/profile-white.png");
     margin-right: 10px;
-}
+} */
 .txt-ur{
     color: var(--secondary-color);
     text-decoration: none;
     font-weight: 900;
     font-size: 26px;
-    margin: 0 228px 5px 14px;
+    margin: 5px 14px;
     letter-spacing: 2px;
     display: flex;
     align-items: center;
+    transition: .4s;
 }
 .navStyle{
     height: 50px;
@@ -80,6 +88,7 @@ nav ul li a{
     text-decoration: none;
     color: var(--nav-txt-color);
     font-weight: 900;
+    transition: .4s;
 }
 nav ul li a:hover {
     /* color: #d6d600; */
@@ -121,7 +130,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 .modeDarkLight{
-    margin-left: 190px;
+    /* margin-left: 190px; */
     display: flex;
     justify-content: flex-end;
 }
@@ -183,16 +192,19 @@ nav ul li a:hover {
     margin-top: 20px;
     cursor: pointer;
 }
-.cv-img{
+#cvImage{
     width: 15px;
     height: 15px;
     margin-left: 20px;
     margin-right: 5px;
+    font-size: inherit;
+    transition: .4s;
 }
 .dw-cv{
     text-decoration: none;
     color: #3d3d3d;
     font-family: 'Roboto', sans-serif;
+    transition: .4s;
 }
 /* .cv,.dw-cv:hover{
     color: var(--theme-color);
@@ -234,6 +246,9 @@ nav ul li a:hover {
 }
 #navMenu.action > span:nth-child(3){
     transform: translateY(-9px) rotate(90deg);
+}
+#navMenu{
+    display: none;
 }
 
 /* ---------Moble-Screen---------- */
@@ -297,7 +312,7 @@ nav ul li a:hover {
         margin-left: 15px;
         justify-content: center;
     }
-    .cv-img{
+    #cvImage{
         margin-left: 0;
     }
     .dev-img{
@@ -313,6 +328,9 @@ nav ul li a:hover {
     #navMenu > span{
         display: block;
         margin-right: 25px;
+    }
+    #navMenu{
+        display: block;
     }
 }
 
@@ -354,7 +372,7 @@ nav ul li a:hover {
         margin-left: 20px;
         justify-content: center;
     }
-    .cv-img{
+    #cvImage{
         margin-left: 0;
     }
     main{
