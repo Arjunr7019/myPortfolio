@@ -27,14 +27,29 @@ icon.onclick = function(){
 const navMenu = document.querySelector("#navMenu");
 let navMenuVisible = document.querySelector("#navMenuVisible");
 let nothing = document.getElementById("nothing");
+let navMenuItems = document.getElementById("navMenuItems").style.cssText;
+
+const navInAction =
+`
+    position: absolute;
+    width: 42%;
+    height: 100vh;
+    right: 0;
+    background-color: #f0f0f0;
+    filter: drop-shadow(16px 16px 16px black);
+`;
 
 navMenu.addEventListener("click",() => {
     navMenu.classList.toggle("action");
     nothing.classList.toggle("changeNothing");
     if(nothing.classList.contains("changeNothing")){
-        navMenuVisible.classList.replace("navStyle","navVisible");
+        document.getElementById("navMenuItems").style.cssText = navInAction;
+        setTimeout(function() {
+            navMenuVisible.classList.replace("navStyle","navVisible");
+        },600);
     }else{
         navMenuVisible.classList.replace("navVisible","navStyle");
+        document.getElementById("navMenuItems").style.cssText = navMenuItems;
     }
 });
 
