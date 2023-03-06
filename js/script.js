@@ -33,7 +33,7 @@ const navInAction =
 `
     position: absolute;
     width: 42%;
-    height: 100vh;
+    height: calc(100vh + 180vh);
     right: 0;
     background-color: #f0f0f0;
     filter: drop-shadow(16px 16px 16px black);
