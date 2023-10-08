@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+
+.navbar-nav {
+    width: 46%;
+}
+
+.profileArea {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    /* background-color: #F8F8F8;
+    box-shadow: 0px 4px 60px #00000040; */
+    background: rgba(255, 255, 255, 0.19);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    border: 1px solid rgba(255, 255, 255, 0.64);
+}
+
+.nav-menu {
+    display: unset;
+    width: 667px;
+    height: 56px;
+    border-radius: 28px;
+    /* background: #E6E6E6; */
+    /* box-shadow: 2px 2px 60px 0px rgba(0, 0, 0, 0.25); */
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    background: rgba(255, 255, 255, 0.19);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    border: 1px solid rgba(255, 255, 255, 0.64);
+}
+
+.profileImage {
+    width: 25px;
+    height: 32.75px;
+    /* position: relative;
+    top: 15%;
+    left: 13%; */
+}
+
+.nav-content {
+    width: 100%;
+}
+
+.nav-content li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-content-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    border: 0px;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.navActive {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    color: black !important;
+    width: fit-content !important;
+    height: 43px !important;
+    border-radius: 28px !important;
+    background: #EBEBEB !important;
+    box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.25) !important;
+    padding: 22px !important;
+    font-weight: 900 !important;
+    border: 0px !important;
+}
+
+.profileArea span {
+    width: 50%;
+    height: 4px;
+    background-color: black;
+    display: block;
+    margin-top: 4px;
+    border-radius: 18px;
+    position: relative;
+    transition: .4s ease-in-out;
+}
+
+.nav-menuActive {
+    position: relative;
+    width: 110px;
+    height: 43px;
+    flex-shrink: 0;
+    border-radius: 28px;
+    background: #EBEBEB;
+    box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.25);
+}
+
+.positionSticky {
+    position: sticky;
+    top: 24px;
+    z-index: 5;
+}
+
+.nav-text {
+    text-decoration: none;
+    color: black;
+    transition: .4s ease-in-out;
+}
+
+.nav-main {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav-item-change {
+    height: 80%;
+    width: 40px;
+    position: relative;
+    left: -41%;
+    top: 0;
+    margin: 2px;
+    z-index: 0;
+    padding: 0 41px;
+    transition: .4s ease-in-out;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.86);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navItemsForSm {
+    opacity: 0;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.47);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: .4s ease-in-out;
+}
+#nav-drop-for-sm{
+    visibility: hidden;
+}
+#forUpper{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.19);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    border: 1px solid rgba(255, 255, 255, 0.64);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+#forUpper a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+
+/* ---------------------------header ends------------------------------------- */
+
+.width-of-main-100 {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.width-of-main-name {
+    color: var(--default-dark-color);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.width-of-main-location {
+    color: #4A4A4A;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.download-button {
+    border: 2px solid var(--default-dark-color);
+    border-radius: 10px;
+    width: 238px;
+    height: 56px;
+    cursor: pointer;
+}
+
+#resumeBtn {
+    border: none;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.card {
+    width: 18rem;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    transition: .4s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.btn-for-projects {
+    border: 2px solid var(--default-dark-color);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--default-dark-color);
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: .4s ease-in-out;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-for-projects:hover {
+    background-color: var(--default-dark-color);
+    color: white;
+}
+
+#QualificationImg {
+    height: inherit;
+    width: 64%;
+}
+
+.width-90 {
+    width: 90%;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: var(--default-dark-color);
+}
+
+.contactInfo li {
+    list-style: none;
+}
+
+.contactInfo li a {
+    text-decoration: none;
+    color: var(--default-dark-color);
+}
+.links-contact{
+    cursor: pointer;
+}
+.links-contact img {
+    height: 86px;
+}
+
+#forHeight {
+    height: 348px;
+}
+
+/* -----------------------common for Header and main-------------------- */
+
+
+html {
+    scroll-padding: 7vmax;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Varela Round', sans-serif; */
+    background-color: #f1f1f1;
+    color: var(--default-dark-color);
+}
+
+:root {
+    --default-dark-color: #373737;
+}
+
+.imgProperty {
+    width: fit-content;
+    height: 44px;
+    mix-blend-mode: multiply;
+}
+
+.default-margin-x-y {
+    margin: 5rem 5rem 10rem 5rem;
+}
+
+.default-border {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.cardBorder {
+    height: fit-content;
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    overflow: hidden;
+    mix-blend-mode: multiply;
+    transition: .4s ease-in-out;
+}
+
+.progress-bar {
+    background-color: var(--default-dark-color);
+}
+
+.cardBorder:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px
+}
+
+/* -----------------------------footer ------------------- */
+html footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 576px) {
+    .default-margin-x-y {
+        margin: 4rem 2.5rem 5rem 2.5rem;
+    }
+
+    #scrollspyHeading4 form {
+        width: 100% !important;
+    }
+
+    #forHeight {
+        width: 100% !important;
+    }
+
+    .width-of-main-100 {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .width-of-main-name {
+        font-size: 58px;
+    }
+
+    .width-of-main-location {
+        font-size: 15px;
+    }
+    html {
+        scroll-padding: 10vmax;
+    }
+    #nav-drop-for-sm{
+        visibility: visible;
+    }
+    #QualificationImg {
+        height: inherit;
+        width: 100%;
+    }
+}
