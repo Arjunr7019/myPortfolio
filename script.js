@@ -3,9 +3,11 @@
 // let str = "0"
 // console.log("0"+' '+ width+"px");
 
+if(document.getElementById('a').classList.contains('active')){
+    document.getElementById('a').style.color = "#cfb200";
+}
 
 const navChange = (e)=>{
-    console.log(e);
     if(e === 'a'){
         let width = document.getElementById('a').offsetWidth;
         document.getElementById('1').style.width = width+"px";
@@ -46,7 +48,7 @@ const navChange = (e)=>{
         let width = document.getElementById('d').offsetWidth;
         document.getElementById('1').style.width = width+"px";
         document.getElementById('1').style.padding = "0"+' '+ width+"px";
-        document.getElementById('1').style.left = "19%";
+        document.getElementById('1').style.left = "19.5%";
         document.getElementById('a').style.color = "black";
         document.getElementById('b').style.color = "black";
         document.getElementById('c').style.color = "black";
